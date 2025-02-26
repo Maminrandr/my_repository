@@ -1,0 +1,95 @@
+.name{
+    color : rgba(248, 246, 246, 0.712);
+    font-size: 32px;
+}
+.mamy{
+    width: 400px;
+}
+.tete{
+    font-size: 50px !important;
+    color : rgba(255, 255, 255, 0.658) !important;
+}
+main{
+    padding-top: 100px;
+}
+.main{
+    margin-top: 80px;
+}
+.entete{
+    z-index: 1;
+    background-color: #212525 !important;
+}
+h1{
+    text-align: center;
+    opacity: 0.2;
+}
+p{
+    margin-left: 30px;
+    color: rgba(240, 248, 255, 0.644);
+}
+section{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 0 20px 100px;
+    scroll-margin-top: 110px;
+    position: relative;
+    color: aqua;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.9);
+}
+/* -----------------------LES ICONES DANS CONTACT-----------------------------------------*/
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.icons {
+    width: 50px;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Facebook */
+.facebook {
+    background-color: #1877F2;
+}
+.whatsApp {
+    background-color: #25D366;
+}
+.linkedin {
+    background-color: #0a66c24b;
+}
+.icons:hover {
+    background-color: #2a2c2c;
+    margin-top: -12px;
+}
+
+/*--------------------------------MODE PETIT ECRAN-----------------------------------------------*/
+@media (max-width: 575.98px) {
+    .main {
+        flex-direction: column !important;
+    }
+    section{
+        scroll-margin-top: 296px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    p{
+        margin: 0 auto;
+        text-align: start;
+    }
+    .name{
+        text-align: start;
+    }
+}
