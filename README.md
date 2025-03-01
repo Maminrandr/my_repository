@@ -1,2 +1,2 @@
 # my_repository
-my first step
+This is my first "PUSH", if you have some advice for me, do not hesitate. 

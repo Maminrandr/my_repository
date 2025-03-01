@@ -1,27 +1,58 @@
-.name{
-    color : rgba(248, 246, 246, 0.712);
-    font-size: 32px;
-}
-.mamy{
-    width: 400px;
-}
 .tete{
     font-size: 50px !important;
     color : rgba(255, 255, 255, 0.658) !important;
 }
+.entete{
+    z-index: 1;
+    background-color: #212525 !important;
+}
+.nav-link {
+    padding-bottom: 2px;
+    transition: border-bottom 0s ease;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid rgba(0, 255, 255, 0.664);
+    padding-bottom: 0;
+}
+/*----------------------PHOTO----ET---NOM--------------------------------------*/
+.name{
+    color : rgba(248, 246, 246, 0.712);
+    font-size: 20.2px;
+    box-shadow: 0px 7px 0px 0px rgba(0, 255, 255, 0.055);
+    display: inline-block;
+}
+.moi{
+    font-weight: bold;
+    color: rgba(240, 248, 255, 0.801);
+    font-size: 20px;
+    margin-left: 0;
+}
+.moi1{
+    color: rgba(240, 248, 255, 0.801);
+    font-size: 19px;
+    margin-left: 0;
+}
+.mamy{
+    width: 400px;
+}
+.py-2 {
+    position: sticky;
+    top: 200px;
+    align-self: flex-start;
+}
+/*------------------BODY---------CONTROL------------------------------------------*/
 main{
     padding-top: 100px;
 }
 .main{
     margin-top: 80px;
 }
-.entete{
-    z-index: 1;
-    background-color: #212525 !important;
-}
+
 h1{
     text-align: center;
-    opacity: 0.2;
+    opacity: 0.1;
+    padding-bottom: 100px;
 }
 p{
     margin-left: 30px;
@@ -30,12 +61,37 @@ p{
 section{
     border: 1px solid white;
     border-radius: 10px;
-    padding: 5px;
+    padding: 50px;
     margin: 0 0 20px 100px;
-    scroll-margin-top: 110px;
     position: relative;
     color: aqua;
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.9);
+    font-weight: bold;
+    opacity: 1;
+    transform: translateY(20px);
+}
+.about{
+    scroll-margin-top: 400px;
+}
+
+.skill{
+    scroll-margin-top: 400px;
+}
+.project{
+    scroll-margin-top: 400px;
+}
+.contact{
+    scroll-margin-top: 400px;
+}
+.mini_title_contact{
+    color: rgba(240, 248, 255, 0.808);
+    font-weight: bold;
+}
+.spacer {
+    height: 80px;
+}
+.spacer1{
+    height: 40px;
 }
 /* -----------------------LES ICONES DANS CONTACT-----------------------------------------*/
 .social-icons {
@@ -55,8 +111,6 @@ section{
     text-decoration: none;
     transition: 0.3s;
 }
-
-/* Facebook */
 .facebook {
     background-color: #1877F2;
 }
@@ -66,13 +120,39 @@ section{
 .linkedin {
     background-color: #0a66c24b;
 }
+.email{
+    background-color: #eb3d1180;
+}
 .icons:hover {
-    background-color: #2a2c2c;
+    background-color: #96999925;
     margin-top: -12px;
+}
+/*---------------------------------LES ICONES DANS SKILL------------------------------------------*/
+.skill_icons{
+        width: 100px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 70px;
+        text-decoration: none;
+        transition: 0.3s;
+}
+.html5 { color: #E34F26; 
+} 
+.javascript { 
+    color: #F7DF1E; 
+}
+.php { 
+    color: #777BB4; 
+} 
+.c { 
+    color: #2762e2d3; 
 }
 
 /*--------------------------------MODE PETIT ECRAN-----------------------------------------------*/
-@media (max-width: 575.98px) {
+@media  (min-width: 312px) and (max-width: 1200px) {
     .main {
         flex-direction: column !important;
     }
@@ -84,6 +164,7 @@ section{
         text-align: center;
         padding-left: 1rem;
         padding-right: 1rem;
+        padding-bottom: auto;
     }
     p{
         margin: 0 auto;
@@ -91,5 +172,11 @@ section{
     }
     .name{
         text-align: start;
+    }
+    .skill_icons{
+        font-size: 40px;
+    }
+    .py-2{
+        position: static;
     }
 }

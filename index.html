@@ -11,14 +11,15 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="./GSAP-lesson/gsap-member/npm-install-this/package/dist/gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <title>Mamy Randriamananjara</title>
 </head>
 
 <body class="container-md bg-dark">
 <header>
-    <div class="container-md entete w-100">
-        <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+    <div class="container-md entete fixed-top w-100">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
                 <a class="navbar-brand tete mx-3" href="#">My Portfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon bar"></span>
@@ -46,39 +47,54 @@
 <div class="d-flex main">
     <div class="py-2 order-1">
         <div>
-            <img class="mamy img-fluid rounded-circle" src="github.jpg" alt="moi" />
+            <img class="mamy img-fluid rounded-circle" src="/Design/github.jpg" alt="moi" />
         </div>
-        <div class="name">
-            <strong>Mamy</strong> <span>Randriamananjara</span>
+        <div class="name mx-5">
+            <strong style="color: rgba(240, 248, 255, 0.801);">Mamy</strong> <span>Randriamananjara</span>
+        </div>
+        <div class="spacer1"></div>
+        <div>
+            <strong style="color: rgba(0, 255, 255, 0.507); font-size: 25px;"> HelloWorld !</strong>
+            <p class="moi">I am Mamy Randriamananjara.</p>
+             <p class="moi1">I'm currently studying at <span style="color: rgba(0, 255, 255, 0.507);">CNTEMAD </span> and <span style="color: rgba(0, 255, 255, 0.507);">42 School Antananarivo</span>. I love problem-solving, coding, and bringing ideas to life. My goal is to create impactful solutions that make a difference while continuously learning and improving.</p>
         </div>
     </div>
 <div class="order-2">
-    <section  id="about">
+    <section class="about" id="about">
         <h1>About</h1>
+        <p></p>
         <p>I’m passionate about computer science, currently looking for an internship to apply my skills and gain hands-on experience.</p>
         <p>Curious, motivated, and eager to learn.</p>
         <p>I am ready to take on new challenges and contribute to a dynamic team.</p>
     </section>
-
-    <section id="skill">
+    <div class="spacer"></div>
+    <section class="skill" id="skill">
         <h1>Skills</h1>
-        <p>I’m passionate about computer science, currently looking for an internship to apply my skills and gain hands-on experience.</p>
-        <p>Curious, motivated, and eager to learn.</p>
-        <p>I am ready to take on new challenges and contribute to a dynamic team.</p>
+        <p>I am a quick learner and adapt easily to new environments.</p>
+        <p style="font-size: 15px;">Not an expert yet but have some experience and knowledge in :</p>
+        <div class="social-icons">
+            <i class="fab fa-html5 skill_icons html5" title="html5"></i>
+            <i class="fab fa-js skill_icons javascript" title="javascript"></i>
+            <i class="fab fa-php skill_icons php" title="php"></i>
+            <i class="fab fa-cuttlefish skill_icons c" title="langage C"></i>
+            <img class="skill_icons" src="https://upload.wikimedia.org/wikipedia/fr/6/62/MySQL.svg" title="Database" alt="MySQL Logo" width="50">
+        </div>
     </section>
-
-    <section id="project">
+    <div class="spacer"></div>
+    <section class="project" id="project">
         <h1>My project</h1>
-        <p>I’m passionate about computer science, currently looking for an internship to apply my skills and gain hands-on experience.</p>
-        <p>Curious, motivated, and eager to learn.</p>
-        <p>I am ready to take on new challenges and contribute to a dynamic team.</p>
+        <p>During my studies, i have built small projects such as : </p>
+        <p> - School DATABASE with php&mySQL</p>
+        <p> - Custom implementations of built-in functions like toupper(), itoa(),...</p>
+        <p>I'm working on improving them and adding more features.</p>
     </section>
-
-    <section id="contact">
+    <div class="spacer"></div>
+    <section class="contact" id="contact">
         <h1>Contact</h1>
-        <p>I’m passionate about computer science, currently looking for an internship to apply my skills and gain hands-on experience.</p>
-        <p>Curious, motivated, and eager to learn.</p>
-        <p>I am ready to take on new challenges and contribute to a dynamic team.</p>
+        <strong class="mini_title_contact">💬 Feel free to reach out!</strong>
+        <p>I'm always open to discussing new projects, collaborations, or just chatting about tech.</p>
+        <strong class="mini_title_contact">📬 Let's talk!</strong> 
+        <p>You can reach me via email or social media. I look forward to hearing from you!</p>
         <div class="social-icons">
             <a href="https://wa.me/0343251599" target="_blank" class="whatsApp icons" title="whatsApp">
                 <i class="fab fa-whatsapp"></i>
@@ -89,10 +105,16 @@
             <a href="https://www.linkedin.com/in/mamy-randriamananjara-59a009315/" target="_blank" class="icons linkedin" title="linkedin">
                 <i class="fab fa-linkedin"></i>
             </a>
+            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=Randriamananjara24@gmail.com" target="_blank" class="email icons" title="email">
+                <i class="fas fa-envelope"></i>
+            </a>
         </div>
     </section>
+    <div class="spacer"></div>
 </div>
 </div>
 </main>
+<script src="/Design/index.js">
+</script>
 </body>
 </html>
